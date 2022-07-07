@@ -9,14 +9,16 @@ function incluirUmaLinha(){
     let contato = document.getElementById("contato").value
 
     //montar linha da tabela
-    let linhaNova = `<tr><td>${nome}</td>`
+   /* let linhaNova = `<tr><td>${nome}</td>`
     linhaNova += `<td>${salario}</td>`
     linhaNova += `<td>${descricao}</td>`
     linhaNova += `<td>${requisitos}</td>`
     linhaNova += `<td>${beneficios}</td>`
     linhaNova += `<td>${empresa}</td>`
     linhaNova += `<td>${contato}</td>`
+*/
 
+let linhaNova = `<div class="row"><div class="col s12 m6"><div class="z-depth-4 left-align Heading h3 card-panel hoverable card darken-1"><div class="card-content white-text"><p class="card-title" style="font-weight:600;"> ${nome}</p><p style="font-weight:100;">Faixa Salarial: ${salario}<br>Descrição: ${descricao}<br>Requisítos: ${requisitos}<br>Benefícios: ${beneficios}<br>Sobre a Empresa: ${empresa}</p></div><div class="card-action"><a href="#" style="font-weight:300; font-style:italic;">${contato}</a></div></div></div></div>`
     document.getElementById("ListarVagas").innerHTML += linhaNova
 
 }
@@ -41,7 +43,7 @@ btSalvar.addEventListener("click", function(){
 
 function salvar(){
 localStorage.ListarVagas = document.getElementById("ListarVagas").innerHTML
-navigator.vibrate(3000)
+
 
 }
 
