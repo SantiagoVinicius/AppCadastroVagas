@@ -18,7 +18,7 @@ function incluirUmaLinha(){
     linhaNova += `<td>${contato}</td>`
 */
 
-let linhaNova = `<div class="row"><div class="col s12 m6"><div class="z-depth-4 left-align Heading h3 card-panel hoverable card darken-1"><div class="card-content white-text"><p class="card-title" style="font-weight:800;">${nome}</p><p style="">Faixa Salarial:<span style="font-weight:100;">${salario}</span><br>Descrição:<span style="font-weight:100;"> ${descricao}<span><br>Requisítos: <span style="font-weight:100;"> ${requisitos} </span><br>Benefícios: <span style="font-weight:100;"> ${beneficios}<span> <br>Sobre a Empresa: <span style="font-weight:100;"> ${empresa}<span> </p></div><div class="card-action"><a href="#" style="font-weight:300; font-style:italic;">${contato}</a></div></div></div></div>`
+let linhaNova = `<div class="row"><div class="col s12 m6"><div class="z-depth-4 left-align Heading h3 card-panel hoverable card darken-1"><div class="card-content white-text"><p class="card-title" style="font-weight:800;">${nome}</p><p style="">Faixa Salarial:<span style="font-weight:100;">${salario}</span><br>Descrição:<span style="font-weight:100;"> ${descricao}</span><br>Requisítos: <span style="font-weight:100;"> ${requisitos} </span><br>Benefícios: <span style="font-weight:100;"> ${beneficios}</span> <br>Sobre a Empresa: <span style="font-weight:100;"> ${empresa}<span> </p></div><div class="card-action"><a href="#" style="font-weight:300; font-style:italic;">${contato}</a></div></div></div></div>`
     document.getElementById("ListarVagas").innerHTML += linhaNova
 
 }
